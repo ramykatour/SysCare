@@ -59,11 +59,15 @@ Two things worth knowing. Cleaning the registry almost never speeds up a PC, so 
 
 Requirements: Windows 10 or 11, 64-bit.
 
-VirusTotal report: [view scan](YOUR_VIRUSTOTAL_LINK)
+VirusTotal report: [view scan](https://www.virustotal.com/gui/file/5af1ec346f68285d5130ac57b11d49e86503eb959073f5fb9316b5b46e932282/detection)
+
+### Windows SmartScreen
+
+On first launch Windows may show "Windows protected your PC", because the exe is not signed with a paid code-signing certificate. Click **More info**, then **Run anyway**.
 
 ### Antivirus warnings
 
-A few antivirus engines flag programs that edit the registry, touch process memory and ask for admin rights, and SysCare does all three. If yours complains, check the VirusTotal report above: a handful of detections out of 70 or so engines on a tool like this is normal. If you are not comfortable running it, don't.
+A few engines flag programs that edit the registry, touch process memory and ask for admin rights, and SysCare does all three. In the VirusTotal scan of version 2.1, 3 of 71 engines (Bkav Pro, CrowdStrike Falcon and SecureAge) returned generic heuristic detections, and the major engines did not flag it. This is common for PyInstaller builds. You can [check the current report](https://www.virustotal.com/gui/file/5af1ec346f68285d5130ac57b11d49e86503eb959073f5fb9316b5b46e932282/detection) yourself. If you are not comfortable running it, don't.
 
 ## FAQ
 

@@ -15,19 +15,22 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-2.2-22d3ee" alt="version 2.1">
+  <img src="https://img.shields.io/badge/version-2.3-22d3ee" alt="version 2.3">
   <img src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4" alt="Windows 10 | 11">
   <img src="https://img.shields.io/badge/price-free-green" alt="free">
 </p>
 
 <!-- Screenshots go in docs/screenshots/ -->
 <p align="center">
-  <img src="docs/screenshots/dashboard.png" width="720" alt="SysCare dashboard">
+  <img src="docs/screenshots/dashboard.png" width="410" alt="SysCare dashboard, dark theme">
+  <img src="docs/screenshots/dashboard-light.png" width="410" alt="SysCare dashboard, light theme">
 </p>
 
 ## What it does
 
 **Quick Clean** is the button on the dashboard. One click clears temp files and browser caches, then releases idle RAM, and shows what was freed. It does not touch the Recycle Bin or your documents. There is a "Copy result" button if you want to share the numbers.
+
+**The dashboard** also shows a System Health score from 0 to 100. It is based on how full your drives are, how much memory is in use, how many programs start with Windows and whether a torrent client is running. The biggest problems are listed under the score, and "Fix now" opens the page that deals with the first one. CPU and memory have a one-minute history graph, and each drive bar turns amber above 70% and red above 90%. The quick action tiles jump straight to the cleaner tools.
 
 **Junk Cleaner** clears temp files, the thumbnail cache, Windows error reports, the Windows Update download cache, Chrome / Edge / Firefox caches and the Recycle Bin. It shows the size of each category before you delete anything.
 
@@ -45,7 +48,7 @@
 
 **Network Monitor** shows live download and upload speed and which processes hold the most connections. Torrent clients are flagged and can be ended from the list.
 
-**Settings** has the language switch (English / Arabic), the update check, tray options and automatic cleaning.
+**Settings** has the theme (dark or light) and accent color, the language switch (English / Arabic), the update check, tray options and automatic cleaning.
 
 ### Tray and automatic cleaning
 
@@ -81,7 +84,8 @@ Two things worth knowing. Cleaning the registry almost never speeds up a PC, so 
 
 Requirements: Windows 10 or 11, 64-bit.
 
-VirusTotal report: [view scan](https://www.virustotal.com/gui/file/ec4efc657aba3ed937d90a3319882ae0ef0561611df495bb7f7635842401baa0/detection)
+<!-- TODO after building 2.3: upload SysCare.exe to VirusTotal and replace this link and the numbers below -->
+VirusTotal report: [view scan](https://www.virustotal.com/gui/file/160ced026df2b0886741059b5f0ba083721cfd6f44692b3ef050b96ccb4d3217/detection)
 
 ### Windows SmartScreen
 
@@ -104,6 +108,12 @@ It deletes temp files and browser caches only. Documents, downloads, the Recycle
 
 **Is Game Mode safe?**
 It only ends the apps you leave checked, and it asks first. Anything unsaved in those apps is lost, and they start again the next time you open them or restart Windows. The power plan is restored when you press Stop Game Mode or close SysCare.
+
+**Can I use light mode or change the color?**
+Yes. Open Settings, then Appearance. Pick Dark or Light and one of four accent colors. It applies immediately and is remembered.
+
+**What does the health score mean?**
+It is a quick hint, not a diagnosis. It goes down when a drive is almost full, memory is nearly used up, many programs start with Windows or a torrent client is running. If it says everything looks good, there is nothing obvious to fix.
 
 **How do I use it in Arabic?**
 Press the language button at the bottom of the sidebar, or choose it in Settings. The text is translated but the layout is not mirrored.
